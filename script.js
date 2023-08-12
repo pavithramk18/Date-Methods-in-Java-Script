@@ -95,11 +95,19 @@ console.log(setseconds);  //Sat Aug 12 2023 16:32://34// GMT+0530 (India Standar
 //setMilliseconds==>we can set the milliseconds from 0 to 999
 
 const setmilliseconds = new Date();
-setmilliseconds.setMilliseconds(789);
-console.log(setmilliseconds); //
+setmilliseconds.setMilliseconds(999);
+console.log(setmilliseconds); //Sat Aug 12 2023 16:41://01// GMT+0530 (India Standard Time)
+
 
 //setMonth==>we can set the month from 0 as Jan till 11 as december
 
 const setmonth = new Date();
 setmonth.setMonth(4);
 console.log(setmonth);  //Fri //May// 12 2023 16:35:51 GMT+0530 (India Standard Time)
+
+//setTime ==>to get the current time and  date for that first we need to get the time then set the time
+
+const gettime = new Date();
+console.log(gettime.getTime());  //1691839053421
+gettime.setTime(1691839053421);
+console.log(gettime);   //Sat Aug 12 2023 16:47:33 GMT+0530 (India Standard Time)
