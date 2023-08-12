@@ -1,5 +1,7 @@
 console.log("List of Inbuilt Date Methods in Javascript");
 
+
+//Get Methods of Date Object in Java Script
 const date= new Date();  //Creates the date object with the keyword new to see todays date 
 console.log(date.toDateString()); //Mon Aug 07 2023
 
@@ -54,6 +56,50 @@ const time = new Date();
 console.log(time.getTime()); //1691758386561
 
 
+//********************************************************************************// 
 
 
+//Set Methods of date in Java Script
 
+//setDate==>sets the date i.e we can set the date from 1 to 31 days of the month
+const setdate= new Date();
+setdate.setDate(21);
+console.log(setdate);  //Mon Aug 21 2023 16:20:35 GMT+0530 (India Standard Time)
+
+//setFullYear==>we can set the (year,month,date) in this format
+
+const setfullyear = new Date();
+setfullyear.setFullYear(2023,7,18);
+console.log(setfullyear);  //  Fri Aug 18 2023 16:25:23 GMT+0530 (India Standard Time)
+
+//setHours==>we can set 0 to 23 hrs in the hours format
+
+const sethour= new Date();
+sethour.setHours(22);
+console.log(sethour);   //Sat Aug 12 2023 //22//:31:13 GMT+0530 (India Standard Time)
+
+//setMinutes==>we can set the minutes from 0 to 59 in the time 
+
+const setminutes = new Date();
+setminutes.setMinutes(54);
+console.log(setminutes);  //Sat Aug 12 2023 16://54//:59 GMT+0530 (India Standard Time)
+
+
+//setSeconds==>we can set the seconds from 0 to 59 in the date 
+
+const setseconds = new Date();
+setseconds.setSeconds(34);
+console.log(setseconds);  //Sat Aug 12 2023 16:32://34// GMT+0530 (India Standard Time)
+
+
+//setMilliseconds==>we can set the milliseconds from 0 to 999
+
+const setmilliseconds = new Date();
+setmilliseconds.setMilliseconds(789);
+console.log(setmilliseconds); //
+
+//setMonth==>we can set the month from 0 as Jan till 11 as december
+
+const setmonth = new Date();
+setmonth.setMonth(4);
+console.log(setmonth);  //Fri //May// 12 2023 16:35:51 GMT+0530 (India Standard Time)
